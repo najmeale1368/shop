@@ -1,0 +1,35 @@
+.login {
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  .header {
+    padding: 25px 0;
+    background-color: #f0ce15;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    h3 {
+      margin: 0 0 5px;
+      font-size: 26px;
+    }
+    span {
+      font-size: 14px;
+    }
+  }
+  .Form {
+    padding: 0 18%;
+    padding-top: 45px;
+  }
+  .fogetPass {
+    margin-top: 8px;
+    text-align: center;
+    .forgetLink {
+      color: #8c8c8c;
+      font-size: 12px;
+      &:hover {
+        color: #f0ce15;
+      }
+    }
+  }
+}

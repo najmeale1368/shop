@@ -1,0 +1,12 @@
+.Checked {
+  display: flex;
+  align-items: center;
+  .checkInput {
+    width: 16px;
+    height: 16px;
+  }
+  .labelInput {
+    margin-left: 10px;
+    color: black;
+  }
+}

@@ -1,0 +1,78 @@
+.Logo {
+  background-color: #1f1f1f;
+  .LogoImg {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    .ImgLogo {
+      padding-top: 100px;
+      .Title {
+        color: #fff;
+        font-family: "Arial", Sans-serif;
+        font-size: 48px;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      .Text {
+        color: #fff;
+        font-family: "Arial", Sans-serif;
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 35px;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+      }
+    }
+  }
+  .Img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 425px) {
+  .Logo {
+    .LogoImg {
+      padding: 0;
+      .ImgLogo {
+        padding-bottom: 30px;
+        padding-top: 0;
+        .Title {
+          font-size: 20px;
+          width: 100%;
+        }
+        .Text {
+          font-size: 20px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .Img {
+    display: none;
+  }
+}
+@media (min-width: 425px) and (max-width: 1024px) {
+  .Logo {
+    .LogoImg {
+      padding: 0;
+      .ImgLogo {
+        padding-bottom: 30px;
+        .Title {
+          font-size: 27px;
+          width: 100%;
+        }
+        .Text {
+          font-size: 27px;
+          width: 100%;
+        }
+      }
+    }
+    .Img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}

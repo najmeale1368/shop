@@ -1,0 +1,61 @@
+.Input {
+  position: relative;
+  margin-bottom: 30px;
+
+  .Label {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    font-size: 14px;
+    line-height: 1;
+    color: #757575;
+    width: 100%;
+    text-align: left;
+    pointer-events: none;
+  }
+  .userInput {
+    width: 100%;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+
+    &:focus ~ .Label {
+      top: -15px;
+      font-size: 11px;
+      opacity: 0.6;
+      transition: all 0.3s ease;
+    }
+    &:focus ~ .labelLine {
+      bottom: -2px;
+      height: 2px;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      width: 100%;
+      background-color: #f0ce15;
+      @keyframes inputAddUnderline {
+        0% {
+          transform: scaleX(0);
+        }
+        100% {
+          transform: scaleX(1);
+        }
+      }
+      animation: inputAddUnderline 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      transform: scaleX(1);
+    }
+  }
+}
+.labelLine {
+  background-color: rgba(0, 0, 0, 0.12);
+  bottom: 2px;
+  height: 1px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}

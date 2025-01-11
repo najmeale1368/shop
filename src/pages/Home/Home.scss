@@ -1,0 +1,337 @@
+.Home {
+  .HomePage {
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+    justify-content: center;
+
+    .Hpage {
+      .Imgg {
+        width: 350px;
+        height: 250px;
+        margin: 10px;
+        object-fit: cover;
+      }
+      .ImgHome {
+        color: white;
+        font-family: "Arial", Sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        p {
+          margin: 10px;
+        }
+      }
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: -250px;
+        z-index: 2;
+        display: block;
+        content: "";
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.3) 100%
+        );
+        transform: skewX(-25deg);
+      }
+      &:hover {
+        &::before {
+          animation: shine 0.7s;
+          @-webkit-keyframes shine {
+            100% {
+              left: 125px;
+            }
+          }
+          @keyframes shine {
+            100% {
+              left: 125%;
+            }
+          }
+        }
+      }
+    }
+
+    .Img1 {
+      width: 350px;
+      height: 250px;
+      margin: 10px;
+      object-fit: cover;
+    }
+    .Img2 {
+      width: 350px;
+      height: 250px;
+      margin: 10px;
+      object-fit: cover;
+    }
+  }
+  .Heading {
+    border-bottom: 1px solid #dbdbdb;
+    padding-top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 13px;
+    &::before {
+      content: "";
+      width: 10%;
+      border-bottom: 3px solid #f0ce15;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .ImgHome1 {
+    color: white;
+    font-family: "Arial", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 40px;
+    right: 120px;
+    :nth-child(1) {
+      color: yellow;
+    }
+    :nth-child(3) {
+      color: white;
+      font-size: 25px;
+      text-transform: capitalize;
+      font-weight: normal;
+    }
+    :nth-child(4) {
+      color: white;
+      font-size: 25px;
+      text-transform: capitalize;
+    }
+    p {
+      margin: 10px;
+    }
+  }
+  .ImgHome2 {
+    color: white;
+    font-family: "Arial", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    top: 40px;
+    right: 210px;
+    p {
+      margin: 10px;
+    }
+    :nth-child(3) {
+      color: yellow;
+    }
+    :nth-child(4) {
+      font-weight: normal;
+    }
+  }
+  .DataProduct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+
+    > div:nth-child(4) {
+      .CardProduct {
+        .Product {
+          border: none;
+        }
+      }
+    }
+    > div:nth-child(3) {
+      .CardProduct {
+        .CardShop {
+          position: relative;
+          .SwitchInput {
+            background-color: #e48d0a;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 30px;
+            right: 35px;
+            z-index: 3;
+            &:hover {
+              border: solid 2px white;
+              outline: solid 1px black;
+            }
+          }
+          .shopInput {
+            width: 20px;
+            height: 20px;
+            background-color: #000;
+            position: absolute;
+            top: 30px;
+            right: 10px;
+            z-index: 3;
+            &:hover {
+              border: solid 2px white;
+              outline: solid 1px black;
+            }
+          }
+        }
+      }
+    }
+  }
+  .elementorSection {
+    background-color: #f7f7f7;
+    height: 500px;
+    margin-top: 50px;
+    .elementor {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      .elementorHeading {
+        border-bottom: 1px solid #dbdbdb;
+        padding-top: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 25px;
+        width: 66%;
+        font-weight: bold;
+        &::before {
+          content: "";
+          width: 13%;
+          border-bottom: 3px solid #f0ce15;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+      .elementorHead {
+        border-bottom: 1px solid #dbdbdb;
+        padding: 60px 0 10px 0;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 25px;
+        width: 32%;
+        font-weight: 600;
+        &::before {
+          content: "";
+          width: 10%;
+          border-bottom: 3px solid #f0ce15;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+    .DataFeature {
+      display: flex;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .Home {
+    .HomePage {
+      display: flex;
+      flex-direction: column;
+      .Hpage {
+        .ImgHome2 {
+          font-size: 20px;
+          position: absolute;
+          left: 20px;
+          right: 0;
+        }
+        .ImgHome1 {
+          font-size: 20px;
+          position: absolute;
+          left: 20px;
+        }
+        .ImgHome {
+          font-size: 20px;
+        }
+        .Imgg {
+          width: 100%;
+          margin: 0;
+        }
+        .Img1 {
+          width: 100%;
+          margin: 0;
+        }
+        .Img2 {
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .DataProduct {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 1024px) {
+  .Home {
+    .HomePage {
+      .Hpage {
+        .Imgg {
+          width: 100%;
+        }
+        .ImgHome {
+          position: absolute;
+          top: 40px;
+          right: 0;
+          p {
+            font-size: 20px !important;
+          }
+        }
+        .ImgHome2 {
+          position: absolute;
+          top: 40px;
+          left: 20px;
+          right: 0;
+          p {
+            font-size: 18px !important;
+          }
+        }
+        .ImgHome1 {
+          position: absolute;
+          top: 40px;
+          right: 20px;
+          p {
+            font-size: 20px !important;
+          }
+        }
+        .Img1 {
+          width: 100%;
+        }
+        .Img2 {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 768px) {
+  .DataProduct {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .DataProduct {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
