@@ -36,16 +36,16 @@
       position: absolute;
       width: 100%;
       background-color: #f0ce15;
-      @keyframes inputAddUnderline {
-        0% {
-          transform: scaleX(0);
-        }
-        100% {
-          transform: scaleX(1);
-        }
-      }
-      animation: inputAddUnderline 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      transform: scaleX(1);
+      // @keyframes inputAddUnderline {
+      //   0% {
+      //     transform: scaleX(0);
+      //   }
+      //   100% {
+      //     transform: scaleX(1);
+      //   }
+      // }
+      // animation: inputAddUnderline 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      // transform: scaleX(1);
     }
   }
 }

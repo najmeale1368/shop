@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import IMG from "../../assets/images/iStock_80745525_XXLARGE.png";
 import IMG1 from "../../assets/images/shutterstock_190962332.jpg";
 import IMG2 from "../../assets/images/studio_microphones_by_wulfman65-d4sas4u.jpg";

@@ -1,4 +1,4 @@
-import React, { FunctionComponent, SetStateAction, useState } from "react";
+import { FunctionComponent, SetStateAction, useState } from "react";
 import "./CardProduct.scss";
 import { NavLink } from "react-router-dom";
 import { Button } from "../Button";

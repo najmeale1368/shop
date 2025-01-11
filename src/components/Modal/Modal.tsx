@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState } from "react";
+import { FunctionComponent, useState } from "react";
 import "./Modal.scss";
 import { Login, Reset } from "@/components";
 import { IoClose } from "react-icons/io5";

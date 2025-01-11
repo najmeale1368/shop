@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import Image from "../../assets/images/banner1-1.png";
 import "./SubHeader.scss";
 import { Button } from "../Button";

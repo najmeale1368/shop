@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import { DataMenu } from "@/mock/Data";
 import { NavLink } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";

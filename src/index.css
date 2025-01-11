@@ -1,14 +1,13 @@
-@import 'assets/styles/bootstrap-grid.css';
+@import "assets/styles/bootstrap-grid.css";
 @import "assets/fonts/Poppins//style.css";
-@import "assets/styles/variable.scss";
+/* @import "assets/styles/variable.scss"; */
 
-
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }

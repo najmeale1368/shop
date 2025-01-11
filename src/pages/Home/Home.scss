@@ -45,19 +45,19 @@
         transform: skewX(-25deg);
       }
       &:hover {
-        &::before {
-          animation: shine 0.7s;
-          @-webkit-keyframes shine {
-            100% {
-              left: 125px;
-            }
-          }
-          @keyframes shine {
-            100% {
-              left: 125%;
-            }
-          }
-        }
+        // &::before {
+        //   animation: shine 0.7s;
+        //   @-webkit-keyframes shine {
+        //     100% {
+        //       left: 125px;
+        //     }
+        //   }
+        //   @keyframes shine {
+        //     100% {
+        //       left: 125%;
+        //     }
+        //   }
+        // }
       }
     }
 

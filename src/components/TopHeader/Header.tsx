@@ -11,7 +11,7 @@ import { PiCurrencyGbpBold } from "react-icons/pi";
 import { FaDollarSign } from "react-icons/fa";
 import { IoDiamondOutline } from "react-icons/io5";
 import { BsGlobe2 } from "react-icons/bs";
-import { Dropdown, Modal, Login, Reset } from "@/components";
+import { Dropdown, Modal } from "@/components";
 import Search from "../Search/Search";
 import { IoSearchSharp } from "react-icons/io5";
 import Logo from "../../assets/images/logo/logo-1.png";
