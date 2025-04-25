@@ -5,8 +5,10 @@ import IMG2 from "../../assets/images/studio_microphones_by_wulfman65-d4sas4u.jp
 import "./Home.scss";
 import { DataFeatured, DataProduct } from "@/mock/Data";
 import { CardProduct } from "@/components/CardProduct/CardProduct";
+import IMG3 from "../../assets/images/iStock_59834512_XLARGE.jpg";
 
-interface HomeProps {}
+
+interface HomeProps { }
 
 export const Home: FunctionComponent<HomeProps> = () => {
   return (
@@ -77,25 +79,42 @@ export const Home: FunctionComponent<HomeProps> = () => {
           </div>
         </div>
       </div>
-
       <div className="elementorSection">
         <div className="container">
-          <div className="elementor">
-            <div className="elementorHeading">Featured products</div>
-            <div className="elementorHead">Today deals</div>
+          <div className="row">
+            <div className="elementor">
+              <div className="elementorHeading">Featured products</div>
+              <div className="elementorHead">Today deals</div>
+            </div>
           </div>
-          <div className="DataFeature">
-            {DataFeatured?.map((Data: any, index: any) => (
-              <div>
+        </div>
+        <div className="DataFeature">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-md-6 col-lg-4">
                 <CardProduct
-                  key={index}
-                  src={Data.src}
-                  title={Data.title}
-                  subTitle={Data.subTitle}
+                  src={DataFeatured[0]?.src}
+                  title={DataFeatured[0]?.title}
+                  subTitle={DataFeatured[0]?.subTitle}
                   secondary
                 />
               </div>
-            ))}
+              <div className="col-12 col-md-8">
+                <div className="row">
+                  {DataFeatured.slice(1, 4).map((data: any, index: number) => (
+                    <div className="col-12 col-sm-4" key={index}>
+                      <CardProduct
+                        src={data.src}
+                        title={data.title}
+                        subTitle={data.subTitle}
+                        secondary
+                      />
+                    </div>
+                  ))}
+                </div>
+                <img src={IMG3} alt="image" className="Img" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

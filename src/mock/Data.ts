@@ -5,6 +5,7 @@ import imgSix from "../assets/images/5-1.jpg";
 import imgThree from "../assets/images/6-1.jpg";
 import imgFour from "../assets/images/7-1.jpg";
 
+
 export const DataMenu = [
   {
     menu: "HOME",
@@ -79,6 +80,7 @@ export const DataProduct = [
     title: "Barda Headphone",
     subTitle: "$285.00",
   },
+
 ];
 
 export const DataFeatured = [

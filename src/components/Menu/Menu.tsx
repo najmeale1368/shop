@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 import "./Menu.scss";
 
-interface MenuProps {}
+interface MenuProps { }
 export const Menu: FunctionComponent<MenuProps> = () => {
   return (
     <ul className="Menu">

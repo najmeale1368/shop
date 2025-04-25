@@ -12,6 +12,7 @@
         margin: 10px;
         object-fit: cover;
       }
+
       .ImgHome {
         color: white;
         font-family: "Arial", Sans-serif;
@@ -21,10 +22,12 @@
         position: absolute;
         top: 40px;
         left: 20px;
+
         p {
           margin: 10px;
         }
       }
+
       position: relative;
       overflow: hidden;
 
@@ -37,27 +40,28 @@
         content: "";
         width: 50%;
         height: 100%;
-        background: linear-gradient(
-          to right,
-          rgba(255, 255, 255, 0) 0%,
-          rgba(255, 255, 255, 0.3) 100%
-        );
+        background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 100%);
         transform: skewX(-25deg);
       }
+
       &:hover {
-        // &::before {
-        //   animation: shine 0.7s;
-        //   @-webkit-keyframes shine {
-        //     100% {
-        //       left: 125px;
-        //     }
-        //   }
-        //   @keyframes shine {
-        //     100% {
-        //       left: 125%;
-        //     }
-        //   }
-        // }
+        &::before {
+          animation: shine 0.7s;
+
+          @-webkit-keyframes shine {
+            100% {
+              left: 125px;
+            }
+          }
+
+          @keyframes shine {
+            100% {
+              left: 125%;
+            }
+          }
+        }
       }
     }
 
@@ -67,6 +71,7 @@
       margin: 10px;
       object-fit: cover;
     }
+
     .Img2 {
       width: 350px;
       height: 250px;
@@ -74,6 +79,7 @@
       object-fit: cover;
     }
   }
+
   .Heading {
     border-bottom: 1px solid #dbdbdb;
     padding-top: 60px;
@@ -81,6 +87,7 @@
     position: relative;
     text-transform: uppercase;
     font-size: 13px;
+
     &::before {
       content: "";
       width: 10%;
@@ -100,24 +107,29 @@
     position: absolute;
     top: 40px;
     right: 120px;
+
     :nth-child(1) {
       color: yellow;
     }
+
     :nth-child(3) {
       color: white;
       font-size: 25px;
       text-transform: capitalize;
       font-weight: normal;
     }
+
     :nth-child(4) {
       color: white;
       font-size: 25px;
       text-transform: capitalize;
     }
+
     p {
       margin: 10px;
     }
   }
+
   .ImgHome2 {
     color: white;
     font-family: "Arial", Sans-serif;
@@ -127,33 +139,39 @@
     position: absolute;
     top: 40px;
     right: 210px;
+
     p {
       margin: 10px;
     }
+
     :nth-child(3) {
       color: yellow;
     }
+
     :nth-child(4) {
       font-weight: normal;
     }
   }
+
   .DataProduct {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 60px;
 
-    > div:nth-child(4) {
+    >div:nth-child(4) {
       .CardProduct {
         .Product {
           border: none;
         }
       }
     }
-    > div:nth-child(3) {
+
+    >div:nth-child(3) {
       .CardProduct {
         .CardShop {
           position: relative;
+
           .SwitchInput {
             background-color: #e48d0a;
             width: 20px;
@@ -162,11 +180,13 @@
             top: 30px;
             right: 35px;
             z-index: 3;
+
             &:hover {
               border: solid 2px white;
               outline: solid 1px black;
             }
           }
+
           .shopInput {
             width: 20px;
             height: 20px;
@@ -175,6 +195,7 @@
             top: 30px;
             right: 10px;
             z-index: 3;
+
             &:hover {
               border: solid 2px white;
               outline: solid 1px black;
@@ -184,14 +205,18 @@
       }
     }
   }
+
   .elementorSection {
     background-color: #f7f7f7;
-    height: 500px;
+    height: 800px;
     margin-top: 50px;
+
     .elementor {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
+      margin-bottom: 50px;
+
       .elementorHeading {
         border-bottom: 1px solid #dbdbdb;
         padding-top: 60px;
@@ -201,6 +226,7 @@
         font-size: 25px;
         width: 66%;
         font-weight: bold;
+
         &::before {
           content: "";
           width: 13%;
@@ -210,6 +236,7 @@
           left: 0;
         }
       }
+
       .elementorHead {
         border-bottom: 1px solid #dbdbdb;
         padding: 60px 0 10px 0;
@@ -219,6 +246,7 @@
         font-size: 25px;
         width: 32%;
         font-weight: 600;
+
         &::before {
           content: "";
           width: 10%;
@@ -229,16 +257,27 @@
         }
       }
     }
+
     .DataFeature {
       display: flex;
+
+
+      .Img {
+        width: 750px;
+        height: 200px;
+        object-fit: cover;
+        margin-top: 30px;
+      }
     }
   }
 }
+
 @media (max-width: 425px) {
   .Home {
     .HomePage {
       display: flex;
       flex-direction: column;
+
       .Hpage {
         .ImgHome2 {
           font-size: 20px;
@@ -246,22 +285,27 @@
           left: 20px;
           right: 0;
         }
+
         .ImgHome1 {
           font-size: 20px;
           position: absolute;
           left: 20px;
         }
+
         .ImgHome {
           font-size: 20px;
         }
+
         .Imgg {
           width: 100%;
           margin: 0;
         }
+
         .Img1 {
           width: 100%;
           margin: 0;
         }
+
         .Img2 {
           width: 100%;
           margin: 0;
@@ -270,6 +314,7 @@
     }
   }
 }
+
 @media (max-width: 1024px) {
   .DataProduct {
     display: flex;
@@ -284,34 +329,42 @@
         .Imgg {
           width: 100%;
         }
+
         .ImgHome {
           position: absolute;
           top: 40px;
           right: 0;
+
           p {
             font-size: 20px !important;
           }
         }
+
         .ImgHome2 {
           position: absolute;
           top: 40px;
           left: 20px;
           right: 0;
+
           p {
             font-size: 18px !important;
           }
         }
+
         .ImgHome1 {
           position: absolute;
           top: 40px;
           right: 20px;
+
           p {
             font-size: 20px !important;
           }
         }
+
         .Img1 {
           width: 100%;
         }
+
         .Img2 {
           width: 100%;
         }
@@ -319,6 +372,7 @@
     }
   }
 }
+
 @media (min-width: 768px) and (max-width: 768px) {
   .DataProduct {
     width: 700px;
@@ -328,6 +382,7 @@
     justify-content: center;
   }
 }
+
 @media (min-width: 1024px) and (max-width: 1024px) {
   .DataProduct {
     display: flex;

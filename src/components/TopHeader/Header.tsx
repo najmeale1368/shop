@@ -23,7 +23,7 @@ import { Menu } from "../Menu/Menu";
 import { SubHeader } from "../SubHeader/SubHeader";
 import { FaBars } from "react-icons/fa";
 
-interface HeaderProps {}
+interface HeaderProps { }
 
 export const Header: FunctionComponent<HeaderProps> = () => {
   const [showModal, setShowModal] = useState(false);
