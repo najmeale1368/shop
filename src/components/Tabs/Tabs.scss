@@ -1,0 +1,37 @@
+.Tabs {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.TabHeaders {
+    gap: 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.tab-button {
+    background: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.tab-button.active {
+    border-color: #f0ce15;
+    color: #f0ce15;
+}
+
+.TabContent {
+    margin-top: 20px;
+}
+
+.Section {
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}

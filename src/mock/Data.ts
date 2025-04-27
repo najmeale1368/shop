@@ -100,8 +100,57 @@ export const DataFeatured = [
     subTitle: "$285.00",
   },
   {
-    src: imgOne,
+    src: imgFive,
     title: "Army BT Speaker",
     subTitle: "$130.00",
   },
 ];
+export const DataPopular = [
+  {
+    src: imgThree,
+    title: "Army BT Speaker",
+    subTitle: "$130.00",
+  },
+  {
+    src: imgOne,
+    title: "Red 1 BT Speaker",
+    subTitle: "$275.00",
+  },
+  {
+    src: imgTwo,
+    srcOne: imgFour,
+    srcTwo: imgFive,
+    title: "Wired Speaker Audio",
+    subTitle: "$120.00 - $135.00",
+  },
+  {
+    src: imgFive,
+    title: "Barda Headphone",
+    subTitle: "$285.00",
+  },
+]
+export const DataNewest = [
+  {
+    src: imgTwo,
+    title: "Army BT Speaker",
+    subTitle: "$130.00",
+  },
+  {
+    src: imgSix,
+    title: "Red 1 BT Speaker",
+    subTitle: "$275.00",
+  },
+  {
+    src: imgFour,
+    srcOne: imgTwo,
+    srcTwo: imgFive,
+    title: "Wired Speaker Audio",
+    subTitle: "$120.00 - $135.00",
+  },
+  {
+    src: imgOne,
+    title: "Barda Headphone",
+    subTitle: "$285.00",
+  },
+]
+
