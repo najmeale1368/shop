@@ -1,0 +1,22 @@
+.contactInfoItem {
+    display: flex;
+    padding-top: 20px;
+
+    .contactIcon {
+        color: #f0ce15;
+        margin-right: 15px;
+    }
+
+    .contactText {
+        .contactLabel {
+            margin-right: 10px;
+            color: #777;
+            font-weight: 700;
+        }
+
+        .contactValue {
+            color: #e4e4e4;
+        }
+
+    }
+}

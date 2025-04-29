@@ -4,6 +4,8 @@ import imgFive from "../assets/images/2-1.jpg";
 import imgSix from "../assets/images/5-1.jpg";
 import imgThree from "../assets/images/6-1.jpg";
 import imgFour from "../assets/images/7-1.jpg";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaLink } from "react-icons/fa";
+import { FaFacebookF, FaTelegramPlane, FaInstagram, FaYoutube, FaWhatsapp } from "react-icons/fa";
 
 
 export const DataMenu = [
@@ -153,4 +155,48 @@ export const DataNewest = [
     subTitle: "$285.00",
   },
 ]
+export const DataFooterLinks = [
+  {
+    title: "Quick Links",
+    menu: ["My Account", "My Wishlist", "Shopping", "About Us", "Terms & Condition", "Order Status"]
+  },
+  {
+    title: "New & Info",
+    menu: ["Press Releases", "About Sony", "Product Support", "Accessibility", "Product Manuals", "Product Registration"]
+  },
+  {
+    title: "Other Links",
+    menu: ["Sony Pictures", "Sony Music", "Sony Mobile", "Crackle", "Play Station", "Game Stock"]
+  }
+]
+
+export const contactData = [
+  {
+    icon: FaMapMarkerAlt,
+    label: "Address",
+    value: "163 North 39th Street, Suite 836"
+  },
+  {
+    icon: FaPhone,
+    label: "Phone",
+    value: "(+555) 0123 999 9999"
+  },
+  {
+    icon: FaEnvelope,
+    label: "Email",
+    value: "contact@domain.com"
+  },
+  {
+    icon: FaLink,
+    label: "Website",
+    value: "http://www.domain.com"
+  }
+];
+export const socialIconsData = [
+  { icon: FaFacebookF },
+  { icon: FaTelegramPlane },
+  { icon: FaInstagram },
+  { icon: FaYoutube },
+  { icon: FaWhatsapp }
+];
 

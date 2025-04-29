@@ -1,0 +1,42 @@
+.FooterLinks {
+    padding-top: 50px;
+
+    .FooterTitle {
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        line-height: 1.1;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0;
+
+        &::after {
+            content: "";
+            width: 90px;
+            height: 2px;
+            background: #f0ce15;
+            display: block;
+            margin-top: 16px;
+        }
+    }
+
+    .FooterList {
+        list-style: none;
+        padding: 0;
+        cursor: pointer;
+
+        .FooterItem {
+            font-size: 15px;
+            line-height: 40px;
+            color: #fff;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: #f0ce15;
+                transform: translateX(8px);
+            }
+        }
+    }
+}

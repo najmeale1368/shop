@@ -1,17 +1,32 @@
-import { FunctionComponent, useRef } from "react";
+import { FunctionComponent, useRef, useState } from "react";
 import IMG from "../../assets/images/iStock_80745525_XXLARGE.png";
 import IMG1 from "../../assets/images/shutterstock_190962332.jpg";
 import IMG2 from "../../assets/images/studio_microphones_by_wulfman65-d4sas4u.jpg";
 import "./Home.scss";
-import { DataFeatured, DataProduct } from "@/mock/Data";
 import { CardProduct } from "@/components/CardProduct/CardProduct";
 import IMG3 from "../../assets/images/iStock_59834512_XLARGE.jpg";
 import Tabs from "@/components/Tabs/Tabs";
 import DynamicSwiper from "@/components/DynamicSwiper/DynamicSwiper";
+import { FaTelegram } from "react-icons/fa";
+import { FooterLinks } from "@/components/FooterLinks/FooterLinks";
+import { DataFooterLinks, contactData, DataFeatured, DataProduct, socialIconsData } from "@/mock/Data";
+import Logo from "../../assets/images/logo/logo-1.png";
+import { ContactInfo } from "@/components/ContactInfo/ContactInfo";
+import { SocialIcons } from "@/components/SocialIcons/SocialIcons ";
 
-interface HomeProps { }
+
+interface HomeProps {
+  onClick?: void
+}
 
 export const Home: FunctionComponent<HomeProps> = () => {
+  const [isFocused, setIsFocused] = useState(false);
+
+  const [emailShow, setEmailShow] = useState(false)
+
+  const handleShowEmail = () => {
+    setEmailShow(true)
+  }
 
   return (
     <div className="Home">
@@ -130,6 +145,63 @@ export const Home: FunctionComponent<HomeProps> = () => {
       <div className="slide">
         <div className="container">
           <DynamicSwiper />
+        </div>
+      </div>
+      <div className="Slider">
+        <div className="container">
+          <div className="row">
+            <div className="News">
+              <h1 className="Newsletters">
+                Newsletters
+              </h1>
+              <div className="input-wrapper">
+                <input
+                  type="text"
+                  placeholder={isFocused ? '' : 'Enter your email address'}
+                  onFocus={() => setIsFocused(true)}
+                  onBlur={() => setIsFocused(false)}
+                />
+                <FaTelegram className="telegramIcon" onClick={() => handleShowEmail()} />
+                {emailShow && <span className="Email">Email not valid.</span>}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="Footer">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="LogoImg">
+                <img src={Logo} />
+                <div className="LogoText">It is a long established fact that reader will distract
+                  by the readable content of a page...</div>
+              </div>
+              <div>
+                {contactData.map((data, index) => (
+                  <div key={index}>
+                    <ContactInfo label={data.label} value={data.value} icon={data.icon} />
+                  </div>
+                ))}
+              </div>
+              <div className="socialIcons">
+                {socialIconsData.map((data, index) => (
+                  <div key={index}>
+                    <SocialIcons icon={data.icon} />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="col-lg-8">
+              <div className="FooterLinksWrapper">
+                {DataFooterLinks.map((data, index) => (
+                  <div key={index} className="footer-section">
+                    <FooterLinks title={data.title} menu={data.menu} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
