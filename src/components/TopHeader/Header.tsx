@@ -22,6 +22,7 @@ import { FaRegHeart } from "react-icons/fa6";
 import { Menu } from "../Menu/Menu";
 import { SubHeader } from "../SubHeader/SubHeader";
 import { FaBars } from "react-icons/fa";
+import { SearchBox } from "../SearchBox/SearchBox";
 
 interface HeaderProps { }
 
@@ -128,13 +129,16 @@ export const Header: FunctionComponent<HeaderProps> = () => {
               <div className="HeaderWrapper">
                 <img src={Logo} />
               </div>
-              <Search />
+              <SearchBox />
+
+              {/* <Search /> */}
               <SelectInput
                 options={options}
                 value={selectedValue}
                 onChange={handleSelectChange}
                 placeholder="Please select an option"
               />
+
               <IoCloseCircleOutline className="IoClose" onClick={handleShow} />
             </div>
           )}
