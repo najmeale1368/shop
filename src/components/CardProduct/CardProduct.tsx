@@ -26,11 +26,9 @@ export const CardProduct: FunctionComponent<CardProductProps> = ({
   srcTwo,
   secondary,
 }) => {
-  const [isHoverd, setIsHoverd] = useState(false);
   const [isShowImage, setIsShowImage] = useState(0);
 
   const myMoveFunction = (index: SetStateAction<number>) => {
-    setIsHoverd(true);
     setIsShowImage(index);
   };
   return (
@@ -38,38 +36,30 @@ export const CardProduct: FunctionComponent<CardProductProps> = ({
       <div className="Product">
         <div className="CardShop">
           <div className="ProductImg">
-            {!isHoverd && isShowImage === 0 && (
+            {isShowImage === 0 && (
               <img
                 src={src}
                 className={`CardProductImg ${secondary ? "secondary" : ""}`}
               />
             )}
+            {isShowImage === 1 && srcOne && (
+              <img
+                src={srcOne}
+                className={`ImgProwOne ${secondary ? "secondary" : ""}`}
+              />
+            )}
+            {isShowImage === 2 && srcTwo && (
+              <img src={srcTwo} className="ImgProwTwo" />
+            )}
           </div>
           <div
             className="SwitchInput"
-            onMouseEnter={() => myMoveFunction(0)}
-          ></div>
-          {isHoverd && (
-            <div>
-              {srcOne && !isShowImage && (
-                <img
-                  src={srcOne}
-                  className={`ImgProwOne ${secondary ? "secondary" : ""}`}
-                />
-              )}
-            </div>
-          )}
-          <div
             onMouseEnter={() => myMoveFunction(1)}
-            className="shopInput"
           ></div>
-          {isHoverd && (
-            <div>
-              {srcTwo && isShowImage === 1 && (
-                <img src={srcTwo} className="ImgProwTwo" />
-              )}
-            </div>
-          )}
+          <div
+            className="shopInput"
+            onMouseEnter={() => myMoveFunction(2)}
+          ></div>
           <div className="ProdWrrapper">
             <div className="ProHeart">
               <div className="btnWrapperHeart">
